@@ -22,6 +22,8 @@ body {
     text-decoration: none;
     color: #23282F;
     word-spacing: 1.2em; }
+  .banner .blog {
+    display: none; }
   .banner #head h1 {
     color: white;
     font-size: 2.7em; }
@@ -59,26 +61,27 @@ body {
     margin-bottom: 1.5em;
     border-left: solid 2px #dfdfdf; }
 
-.reply {
-  height: 3em; }
-  .reply div {
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: -20px;
-    background-color: #5e686f;
-    text-align: center; }
-  .reply #icon {
-    font-size: 2em;
-    color: white;
-    text-align: center; }
-  .reply .reply-choice {
-    display: none; }
-  .reply .reply-choice li {
-    display: none;
-    height: 50px; }
-  .reply .reply-choice a {
-    text-decoration: none;
-    color: white; }
+.reply #icon {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  width: 1.5em;
+  height: 1.2em;
+  padding-top: .2em;
+  padding-left: .05em; }
+.reply li {
+  display: inline; }
+.reply div {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: -20px;
+  background-color: #5e686f;
+  text-align: center; }
+.reply .reply-choice {
+  display: none; }
+.reply a {
+  text-decoration: none;
+  color: white; }
 
 .almost-footer {
   margin: 50px 0 100px 0;
@@ -97,6 +100,8 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0.7; }
+  .almost-footer .author-pic {
+    display: none; }
   .almost-footer h1 {
     color: #3f6caf;
     font-size: 1.7em;
@@ -173,7 +178,7 @@ footer {
   background-color: #0b2740;
   color: #798c9c;
   text-align: center;
-  height: 350px;
+  padding-bottom: 65px;
   line-height: 1.7em;
   font-size: 1.3em; }
   footer .foot-nav {
@@ -188,5 +193,136 @@ footer {
     text-align: center; }
   footer .ion-android-desktop:before {
     font-size: 66px; }
+
+@media (min-width: 48em) {
+  .banner-box {
+    height: 32.625em;
+    width: 100%; }
+    .banner-box #head {
+      padding-top: 14em; }
+    .banner-box #navigation {
+      float: right;
+      margin-right: 4em;
+      padding-top: 1.75em; }
+    .banner-box .logo {
+      float: left;
+      margin-left: 4em;
+      margin-top: -.5em; }
+    .banner-box .blog {
+      display: inline;
+      float: left;
+      margin-top: 1.75em;
+      margin-left: 1em; }
+    .banner-box #head h1 {
+      font-size: 5em; }
+
+  .text {
+    max-width: 38.25em;
+    position: relative;
+    margin-left: 9em;
+    font-weight: 300; }
+    .text .text {
+      width: 100%; }
+
+  .reply {
+    width: 100%;
+    border-bottom: solid 1px #d5dadf;
+    padding-bottom: 5em;
+    position: relative;
+    margin-left: 0;
+    font-weight: 300;
+    margin-bottom: 0; }
+    .reply .big-reply {
+      height: 1em; }
+    .reply ul {
+      margin-left: 7em; }
+    .reply li {
+      height: 1.5em; }
+    .reply a #icon {
+      display: inline;
+      font-size: 1.5em;
+      text-align: left;
+      padding: 3px 5px; }
+    .reply .reply-choice {
+      font-size: .8em;
+      display: inline;
+      padding: 13px 2em 5px 1em;
+      text-align: center;
+      margin-top: 0;
+      margin-left: 16px;
+      background-color: #92a8b2; }
+
+  .almost-footer {
+    display: block;
+    max-width: 17.5em;
+    position: relative;
+    bottom: 63em;
+    left: 52em;
+    margin-right: 30px;
+    margin-bottom: 0; }
+    .almost-footer .dolphin-pic {
+      display: none; }
+    .almost-footer .author-pic {
+      display: block; }
+    .almost-footer h1 {
+      font-size: 1em; }
+    .almost-footer h2 a {
+      font-size: .8em; }
+
+  .ad {
+    width: 12.5em;
+    position: absolute;
+    top: 53em;
+    left: 50.75em;
+    border: none;
+    margin-bottom: 0; }
+    .ad div {
+      width: 18.5em;
+      height: 19em; }
+    .ad .picture-background {
+      background-color: #0b2740;
+      opacity: .7; }
+    .ad img {
+      width: 100%; }
+    .ad p {
+      font-size: .5em;
+      width: 310px; }
+    .ad p a {
+      margin-left: 10em; }
+
+  .posts {
+    margin-top: -230px;
+    margin-left: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0; }
+    .posts h1 {
+      text-align: center;
+      color: #0a2641; }
+    .posts > div {
+      width: 100%; }
+    .posts .box {
+      display: inline-block;
+      width: 33.333%;
+      margin-bottom: 0; }
+
+  footer {
+    font-size: .9em;
+    margin-bottom: 0;
+    margin-top: 0; }
+    footer .foot-logo {
+      float: left; }
+    footer .foot-logo {
+      margin-left: 5em;
+      line-height: 80px; }
+    footer .ion-android-desktop:before {
+      font-size: 20px; }
+    footer p {
+      display: inline-block; }
+    footer .foot-nav {
+      float: right;
+      line-height: 5px; }
+    footer .foot-nav br {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

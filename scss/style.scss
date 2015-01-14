@@ -27,6 +27,9 @@ body {
 		text-decoration: none;
 		color: #23282F;
 		word-spacing: 1.2em}
+	.blog {
+		display: none;
+	}
 	#head h1 {
 		color: white;
 		font-size: 2.7em;}
@@ -72,23 +75,31 @@ body {
 }
 
 .reply {
-	height: 3em;
-	div {
-	display:inline-block;
-	margin-left: 30px;
-	margin-right: -20px;
-	background-color: #5e686f;
-	text-align: center;}
+	// height: 3em;
+	// width: 200px;
 	#icon {
 		font-size: 2em;
 		color: white;
+		text-align: center;
+		width: 1.5em;
+		height: 1.2em;
+		padding-top: .2em;
+		padding-left: .05em;}
+
+	li {
+		display: inline;
+	}
+
+	div {
+		display:inline-block;
+		margin-left: 30px;
+		margin-right: -20px;
+		background-color: #5e686f;
 		text-align: center;}
+
 	.reply-choice {
 		display: none;}
-	.reply-choice li {
-		display: none;
-		height: 50px;}
-	.reply-choice a {
+	a {
 		text-decoration: none;
 		color: white;}
 }
@@ -115,6 +126,10 @@ body {
 		width: 100%;
 		opacity: 0.7;
 		}
+
+	.author-pic {
+		display: none;
+	}
 
 	h1 {
 		color: #3f6caf;
@@ -206,7 +221,8 @@ footer {
 	background-color: rgb(11, 39, 64);
 	color: rgb(121, 140, 156);
 	text-align: center;
-	height: 350px;
+	// height: 350px;
+	padding-bottom: 65px;
 	line-height: 1.7em;
 	font-size: 1.3em;
 	.foot-nav {
@@ -228,8 +244,172 @@ footer {
 
 
 
+@media (min-width: 48em) {
+
+.banner-box {
+height: 32.625em;
+width:100%;
+	#head {
+		padding-top: 14em;}
+	#navigation {
+		float: right;
+		margin-right: 4em;
+		padding-top: 1.75em;}
+	.logo {
+		float:left;
+		margin-left: 4em;
+		margin-top: -.5em;}
+	.blog {
+		display: inline;
+		float: left;
+		margin-top: 1.75em;
+		margin-left: 1em;}
+	#head h1 {
+		font-size: 5em;}
+}
+
+.text {
+	max-width: 38.25em;
+	position: relative;
+	margin-left: 9em;
+	// margin-bottom: 0;
+	font-weight: 300;
+	.text {
+		width:100%;}
+}
+
+.reply {
+	width: 100%;
+	border-bottom: solid 1px #d5dadf; 
+	padding-bottom: 5em;
+	position: relative;
+	margin-left: 0;
+	font-weight: 300;
+	margin-bottom: 0;
+	.big-reply {
+		height: 1em;}
+
+	ul {
+		margin-left: 7em;
+	}
+
+	li {
+		height: 1.5em;
+		// width: 8em;
+	}
+
+	a #icon {
+		display: inline;
+		font-size: 1.5em;
+		text-align: left;
+		// height: 30px;
+		// width: 33px;
+		padding: 3px 5px;
+		// margin-left: 20px;
+	}
 
 
+	.reply-choice {
+		font-size: .8em;
+		display: inline;
+		padding: 13px 2em 5px 1em;
+		text-align: center;
+		margin-top: 0;
+		margin-left: 16px;
+		background-color: rgb(146, 168, 178);}
+
+	}
+
+
+.almost-footer {
+	display:block;
+	max-width: 17.5em;
+	position: relative;
+	bottom: 63em;
+	left: 52em;
+	margin-right: 30px;
+	margin-bottom: 0;
+	.dolphin-pic {
+		display: none;
+	}
+	.author-pic {
+		display: block;
+	}
+	h1 {
+		font-size: 1em;
+	}
+	h2 a {
+		font-size: .8em;
+	}
+}
+
+.ad {
+	// float: right;
+	width: 12.5em;
+	position: absolute;
+	top: 53em;
+	left: 50.75em;
+	border: none;
+	margin-bottom: 0;
+	div {
+		width:18.5em;
+		height: 19em;}
+	.picture-background {
+		background-color: rgb(11, 39, 64);
+		opacity: .7; 
+	}
+	img {
+		width: 100%;}
+	p {
+		font-size: .5em;
+		width:310px;}
+	p a {
+		margin-left: 10em;}
+}
+
+.posts {
+	margin-top: -230px;
+	margin-left: 0;
+	position: relative;
+	width: 100%;
+	margin-bottom: 0;
+	h1 {
+		text-align: center;
+		color: rgb(10, 38, 65);
+	}
+	> div {
+		width: 100%
+	}
+	.box {
+		display: inline-block;
+		width: 33.333%;
+		margin-bottom: 0;}
+}
+
+footer {
+	font-size: .9em;
+	margin-bottom: 0;
+	margin-top: 0;
+	.foot-logo {
+		float: left;}
+	.foot-logo {
+		margin-left: 5em;
+		line-height: 80px;}
+	.ion-android-desktop:before {
+		font-size: 20px;}
+	p {
+		display: inline-block;}
+	.foot-nav {
+		float: right;
+		line-height: 5px;}
+	.foot-nav br {
+		display: none;}
+}
+
+
+
+// THIS BELONGS TO THE MEDIA QUERIE
+}
 
 
 
