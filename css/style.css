@@ -68,20 +68,22 @@ body {
   width: 1.5em;
   height: 1.2em;
   padding-top: .2em;
-  padding-left: .05em; }
+  padding-left: .05em;
+  background-color: #5e686f; }
 .reply li {
   display: inline; }
 .reply div {
   display: inline-block;
   margin-left: 30px;
   margin-right: -20px;
-  background-color: #5e686f;
   text-align: center; }
 .reply .reply-choice {
   display: none; }
 .reply a {
   text-decoration: none;
   color: white; }
+.reply a:hover #icon {
+  background-color: #213752; }
 
 .almost-footer {
   margin: 50px 0 100px 0;
@@ -121,7 +123,8 @@ body {
 .ad {
   text-align: center;
   padding: 0 30px 125px 20px;
-  border-bottom: solid 1px #d5dadf; }
+  border-bottom: solid 1px #d5dadf;
+  margin: 0 auto; }
   .ad div {
     width: 30em;
     height: 24em;
@@ -136,8 +139,8 @@ body {
     text-align: right; }
   .ad p a {
     color: #6b6f75;
-    margin-right: 1.2em;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    text-align: right; }
 
 .posts {
   margin: 125px 30px 110px 30px;
@@ -166,6 +169,9 @@ body {
     background-image: url(http://www.versatrailer.us/OSAGE/images/OSAGE%20CANOES%20OSAGIAN%20CANOE.JPG); }
   .posts #pic3 {
     background-image: url(http://iheartgoatmeat.files.wordpress.com/2013/09/surfing-dog-1.jpg); }
+  .posts #pic4 {
+    background-image: url(http://www.gq.com/images/entertainment/2011/05/zach-galifianakis/zach-galifianakis-cover_300x430.jpg);
+    display: none; }
   .posts .post-text {
     position: absolute;
     bottom: 25px;
@@ -193,6 +199,8 @@ footer {
     text-align: center; }
   footer .ion-android-desktop:before {
     font-size: 66px; }
+  footer section {
+    display: none; }
 
 @media (min-width: 48em) {
   .banner-box {
@@ -220,9 +228,8 @@ footer {
     max-width: 38.25em;
     position: relative;
     margin-left: 9em;
-    font-weight: 300; }
-    .text .text {
-      width: 100%; }
+    font-weight: 300;
+    width: 100%; }
 
   .reply {
     width: 100%;
@@ -251,6 +258,8 @@ footer {
       margin-top: 0;
       margin-left: 16px;
       background-color: #92a8b2; }
+    .reply a:hover .reply-choice {
+      background-color: #3f6caf; }
 
   .almost-footer {
     display: block;
@@ -270,12 +279,12 @@ footer {
       font-size: .8em; }
 
   .ad {
+    float: right;
     width: 12.5em;
     position: absolute;
     top: 53em;
     left: 50.75em;
-    border: none;
-    margin-bottom: 0; }
+    border: none; }
     .ad div {
       width: 18.5em;
       height: 19em; }
@@ -296,6 +305,8 @@ footer {
     position: relative;
     width: 100%;
     margin-bottom: 0; }
+    .posts #pic4 {
+      display: inline-block; }
     .posts h1 {
       text-align: center;
       color: #0a2641; }
@@ -303,26 +314,27 @@ footer {
       width: 100%; }
     .posts .box {
       display: inline-block;
-      width: 33.333%;
+      width: 25%;
       margin-bottom: 0; }
 
   footer {
     font-size: .9em;
     margin-bottom: 0;
-    margin-top: 0; }
+    margin-top: 0;
+    max-height: 6em; }
     footer .foot-logo {
-      float: left; }
-    footer .foot-logo {
-      margin-left: 5em;
-      line-height: 80px; }
+      margin-right: 30em;
+      margin-top: 20.4em; }
     footer .ion-android-desktop:before {
       font-size: 20px; }
     footer p {
       display: inline-block; }
     footer .foot-nav {
-      float: right;
-      line-height: 5px; }
+      margin-left: 35em;
+      margin-bottom: -22em; }
     footer .foot-nav br {
-      display: none; } }
+      display: none; }
+    footer section {
+      display: inline; } }
 
 /*# sourceMappingURL=style.css.map */

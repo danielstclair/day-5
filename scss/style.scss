@@ -84,7 +84,8 @@ body {
 		width: 1.5em;
 		height: 1.2em;
 		padding-top: .2em;
-		padding-left: .05em;}
+		padding-left: .05em;
+		background-color: #5e686f;}
 
 	li {
 		display: inline;
@@ -94,7 +95,7 @@ body {
 		display:inline-block;
 		margin-left: 30px;
 		margin-right: -20px;
-		background-color: #5e686f;
+		// background-color: #5e686f;
 		text-align: center;}
 
 	.reply-choice {
@@ -102,6 +103,9 @@ body {
 	a {
 		text-decoration: none;
 		color: white;}
+	a:hover #icon{
+	background-color: #213752;}
+
 }
 
 
@@ -116,20 +120,17 @@ body {
 		margin-bottom: 20px;
 		background-color: #3f6caf;
 		border: solid 1px white;
-		border-radius: 50%;
-	}
+		border-radius: 50%;}
 
 	img {
 		border: solid 0 white;
 		border-radius: 50%;
 		height: 100%;
 		width: 100%;
-		opacity: 0.7;
-		}
+		opacity: 0.7;}
 
 	.author-pic {
-		display: none;
-	}
+		display: none;}
 
 	h1 {
 		color: #3f6caf;
@@ -156,6 +157,7 @@ body {
 	text-align: center;
 	padding: 0 30px 125px 20px;
 	border-bottom: solid 1px #d5dadf;
+	margin: 0 auto;
 
 	div {
 		width: 30em;
@@ -170,15 +172,12 @@ body {
 		opacity: 0.7;}
 
 	p {
-		text-align: right;
-	}
+		text-align: right;}
 
 	p a {
 		color: #6b6f75;
-		margin-right: 1.2em;
 		font-size: 1.5em;
-		// text-align: right;}
-	}
+		text-align: right;}
 }
 
 .posts {
@@ -188,6 +187,7 @@ body {
 		color: #3f6caf;
 		font-size: 3.5em;
 		padding: 30px;}
+
 	.box {
 		background-color: rgb(11, 39, 64);
 		width: 30em;
@@ -195,19 +195,28 @@ body {
 		margin: 0 auto;
 		margin-bottom: 2em;
 		display: block;}
+
 	.post-pics {
 		opacity: 0.7;
 		width: 100%;
 		height: 100%;
 		margin: 0 auto;
 		position: relative;}
+
 	#pic1 {
 		background-image: url(http://d3819ii77zvwic.cloudfront.net/wp-content/uploads/2014/01/dolphins2.jpg);}
 		z-index: 10;
+
 	#pic2 {
 		background-image: url(http://www.versatrailer.us/OSAGE/images/OSAGE%20CANOES%20OSAGIAN%20CANOE.JPG);}
+
 	#pic3 {
 		background-image: url(http://iheartgoatmeat.files.wordpress.com/2013/09/surfing-dog-1.jpg);}
+
+	#pic4 {
+		background-image: url(http://www.gq.com/images/entertainment/2011/05/zach-galifianakis/zach-galifianakis-cover_300x430.jpg);
+		display: none;}
+
 	.post-text {
 		position: absolute;
 		bottom: 25px;		
@@ -221,24 +230,29 @@ footer {
 	background-color: rgb(11, 39, 64);
 	color: rgb(121, 140, 156);
 	text-align: center;
-	// height: 350px;
 	padding-bottom: 65px;
 	line-height: 1.7em;
 	font-size: 1.3em;
+
 	.foot-nav {
 		padding-top: 2.5em;
-		margin: 0 30px 30px 30px;
-	}
+		margin: 0 30px 30px 30px;}
+
 	nav li {
 		display: inline;}
+
 	nav li a { 
 		color: rgb(121, 140, 156);
 		text-decoration: none;}
+
 	.foot-logo {
 		text-align: center;}
+
 	.ion-android-desktop:before {
-		font-size: 66px;
-	}
+		font-size: 66px;}
+
+	section {
+		display: none;}
 }
 
 
@@ -249,21 +263,26 @@ footer {
 .banner-box {
 height: 32.625em;
 width:100%;
+
 	#head {
 		padding-top: 14em;}
+
 	#navigation {
 		float: right;
 		margin-right: 4em;
 		padding-top: 1.75em;}
+
 	.logo {
 		float:left;
 		margin-left: 4em;
 		margin-top: -.5em;}
+
 	.blog {
 		display: inline;
 		float: left;
 		margin-top: 1.75em;
 		margin-left: 1em;}
+
 	#head h1 {
 		font-size: 5em;}
 }
@@ -272,10 +291,8 @@ width:100%;
 	max-width: 38.25em;
 	position: relative;
 	margin-left: 9em;
-	// margin-bottom: 0;
 	font-weight: 300;
-	.text {
-		width:100%;}
+	width:100%;
 }
 
 .reply {
@@ -286,28 +303,21 @@ width:100%;
 	margin-left: 0;
 	font-weight: 300;
 	margin-bottom: 0;
+
 	.big-reply {
 		height: 1em;}
 
 	ul {
-		margin-left: 7em;
-	}
+		margin-left: 7em;}
 
 	li {
-		height: 1.5em;
-		// width: 8em;
-	}
+		height: 1.5em;}
 
 	a #icon {
 		display: inline;
 		font-size: 1.5em;
 		text-align: left;
-		// height: 30px;
-		// width: 33px;
-		padding: 3px 5px;
-		// margin-left: 20px;
-	}
-
+		padding: 3px 5px;}
 
 	.reply-choice {
 		font-size: .8em;
@@ -317,6 +327,9 @@ width:100%;
 		margin-top: 0;
 		margin-left: 16px;
 		background-color: rgb(146, 168, 178);}
+
+		a:hover .reply-choice {
+		background-color: #3f6caf;}
 
 	}
 
@@ -329,40 +342,43 @@ width:100%;
 	left: 52em;
 	margin-right: 30px;
 	margin-bottom: 0;
+
 	.dolphin-pic {
-		display: none;
-	}
+		display: none;}
+
 	.author-pic {
-		display: block;
-	}
+		display: block;}
+
 	h1 {
-		font-size: 1em;
-	}
+		font-size: 1em;}
+
 	h2 a {
-		font-size: .8em;
-	}
+		font-size: .8em;}
 }
 
 .ad {
-	// float: right;
+	float: right;
 	width: 12.5em;
 	position: absolute;
 	top: 53em;
 	left: 50.75em;
 	border: none;
-	margin-bottom: 0;
+
 	div {
 		width:18.5em;
 		height: 19em;}
+
 	.picture-background {
 		background-color: rgb(11, 39, 64);
-		opacity: .7; 
-	}
+		opacity: .7; }
+
 	img {
 		width: 100%;}
+
 	p {
 		font-size: .5em;
 		width:310px;}
+
 	p a {
 		margin-left: 10em;}
 }
@@ -373,16 +389,20 @@ width:100%;
 	position: relative;
 	width: 100%;
 	margin-bottom: 0;
+
+	#pic4 {
+		display:inline-block;}
+
 	h1 {
 		text-align: center;
-		color: rgb(10, 38, 65);
-	}
+		color: rgb(10, 38, 65);}
+
 	> div {
-		width: 100%
-	}
+		width: 100%;}
+
 	.box {
 		display: inline-block;
-		width: 33.333%;
+		width: 25%;
 		margin-bottom: 0;}
 }
 
@@ -390,20 +410,27 @@ footer {
 	font-size: .9em;
 	margin-bottom: 0;
 	margin-top: 0;
+	max-height: 6em;
+
 	.foot-logo {
-		float: left;}
-	.foot-logo {
-		margin-left: 5em;
-		line-height: 80px;}
+		margin-right: 30em;
+		margin-top: 20.4em;}
+
 	.ion-android-desktop:before {
 		font-size: 20px;}
+
 	p {
 		display: inline-block;}
+
 	.foot-nav {
-		float: right;
-		line-height: 5px;}
+		margin-left: 35em;
+		margin-bottom: -22em;}
+
 	.foot-nav br {
 		display: none;}
+
+	section {
+		display: inline;}
 }
 
 
